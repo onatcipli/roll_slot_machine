@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:roll_slot_machine/roll_slot_machine.dart';
 
@@ -21,9 +20,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -84,8 +83,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
 class BuildItem extends StatelessWidget {
   const BuildItem({
-    Key key,
-    this.index,
+    Key? key,
+    required this.index,
   }) : super(key: key);
 
   final int index;
